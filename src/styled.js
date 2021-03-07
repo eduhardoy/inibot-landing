@@ -1,4 +1,38 @@
-import styled from 'styled-components';
+import styled, {createGlobalStyle}  from 'styled-components';
+
+//colores
+export const Color__azulOscuro = '#001A46;'
+
+export const Color__azul = '#084C94;'
+
+export const Color__celeste = '#D1EBFF;'
+
+export const Color__celestClaro = '#F0F8FF;'
+
+//GlobalStyle
+export const GlobalStyle = createGlobalStyle `
+
+    body{
+        margin: 0;
+        color: ${Color__azulOscuro};
+        font-family: 'Fredoka One', cursive;
+    }
+`
+
+/* Cargar una tipografía:
+usando GlobalStyle:
+
+export const GlobalStyle = createGlobalStyle`
+	@font-face {
+        font-family: myFont;
+        src: url(${font});
+    }
+`; */
+
+
+
+/* 
+Ejemplo video edu
 
 export const Cuadrado = styled.div`
     width: 70px;
@@ -24,4 +58,4 @@ export const Input = styled.input.attrs(props => ({
     maxLength: props.myMaxLength || 5,
     }))`
   color: blue;
-`;
+`; */
