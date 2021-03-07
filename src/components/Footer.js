@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Footer__container = styled.div`
+const FooterContainer = styled.div`
     height: 100px;
     background: #001A46;
     color: white;
@@ -11,9 +11,9 @@ const Footer__container = styled.div`
 function Footer(){
 
     return(
-        <Footer__container>
+        <FooterContainer>
             
-        </Footer__container>
+        </FooterContainer>
     );
 
 }

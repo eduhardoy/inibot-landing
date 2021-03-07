@@ -7,7 +7,7 @@ export const Color__azul = '#084C94;'
 
 export const Color__celeste = '#D1EBFF;'
 
-export const Color__celestClaro = '#F0F8FF;'
+export const Color__celesteClaro = '#F0F8FF;'
 
 //GlobalStyle
 export const GlobalStyle = createGlobalStyle `

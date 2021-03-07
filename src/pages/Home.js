@@ -1,53 +1,65 @@
 import React from 'react';
 import styled from 'styled-components';
-/* import {Cuadrado, Rectangulo, Component, Input} from '../styled'; */
-/* import Header from '../components/Header'; */
 
-const Cuadrado = styled.div`
-    width: 70px;
-    height: 70px;
-    background-color: pink;
-    
+import { Color__celeste, Color__celesteClaro} from '../styled';
+import banner from '../images/banner.png';
 
-    :hover{
-        background-color: yellow;
+const HomeHero = styled.div`
+    height:970px; 
+    background: url(${banner}); // la img tiene 1080 de alto
+    padding-top: 110px;
+
+    h1{
+        text-align: center;
+        font-size:5em;
+        font-weight: lighter;
     }
 `;
 
-const Rectangulo = styled(Cuadrado)`
-    width: 200px;
+const HomeSection = styled.section`
+    height:400px;
+    
 `;
 
-const Component = styled.div`
-    background-color: ${({isRight}) => isRight ? 'green' : 'red'};
+const HomeSectionTecno = styled(HomeSection)`
+    background: ${Color__celeste};
 `;
 
-const Input = styled.input.attrs(props => ({
-    type: "password",
-    maxLength: props.myMaxLength || 5,
-    }))`
-  color: blue;
+const HomeSectionAbout = styled(HomeSection)`
+    /* background: orange; */
 `;
 
-const H1i = styled.div`
-    color: orange;
+const HomeSectionContact = styled(HomeSection)`
+    /* background: red; */
+`;
+
+const HomeSectionClients= styled(HomeSection)`
+    background: ${Color__celesteClaro};
 `;
 
 function Home(){
 
     return(
-        <div>
-                {/* <Header/> */}
-                <Cuadrado className="cuadrado"/>
-                <Rectangulo/>
-                <Component isRight={false}>dddddddddddd</Component>
-                <Input myMaxLenght={20}/>
-            <H1i>
-                <h1>Home</h1>
-                </H1i>
-            <h1i>homee</h1i>
-            
-        </div>
+        <React.Fragment>
+            <HomeHero>
+                <div className="container">
+                    <h1>DESARROLLO<br/> DE SOFTWARE</h1>
+                </div>
+            </HomeHero>
+            <HomeSectionTecno>
+                
+            </HomeSectionTecno>
+            <HomeSectionAbout>
+                
+            </HomeSectionAbout>
+            <HomeSectionContact>
+                
+            </HomeSectionContact>
+            <HomeSectionClients>
+                
+            </HomeSectionClients>    
+        </React.Fragment>    
+        
     );
 }
 

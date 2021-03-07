@@ -4,17 +4,19 @@ import styled from 'styled-components';
 import {Color__azulOscuro} from '../styled';
 import logo from '../images/paglogo.png';
 
-const Header__container = styled.div`
-    
+const HeaderContainer = styled.div`
+    position: absolute;
     height: 100px;
+    width: 100%;
     /* background: yellow; */
     display: flex;
     justify-content: center;
     
+    
 `; 
 
-const Header__logo = styled.div`
-
+const HeaderLogo = styled.div`
+    
     width: 50%;
     display: flex;
     align-items: center;
@@ -35,7 +37,7 @@ const Header__logo = styled.div`
     }
 `;
 
-const Header__menu = styled.div`
+const HeaderMenu = styled.div`
     
     width: 50%;
     display: flex;
@@ -80,26 +82,26 @@ const Header__menu = styled.div`
 function Header (){
 
     return(
-        <Header__container>
-            <Header__logo>
+        <HeaderContainer>
+            <HeaderLogo>
                 <div>
                     <img src={logo} alt="Logo de Inibot"/>
                 </div>
-            </Header__logo>
-            <Header__menu>
+            </HeaderLogo>
+            <HeaderMenu>
                 <ul>
                     <li>
-                        <a href="#">ABOUT</a>
+                        <a href="/">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#"></a>
+                        <a href="/"></a>
                     </li>
                     <li>
-                        <a href="#"></a>
+                        <a href="/"></a>
                     </li>
                 </ul>
-            </Header__menu>
-        </Header__container>
+            </HeaderMenu>
+        </HeaderContainer>
     );
 }
 
