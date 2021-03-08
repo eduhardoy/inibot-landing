@@ -6,12 +6,11 @@ import logo from '../images/paglogo.png';
 
 const HeaderContainer = styled.div`
     position: absolute;
-    height: 100px;
+    height: 120px;
     width: 100%;
     /* background: yellow; */
     display: flex;
     justify-content: center;
-    
     
 `; 
 
@@ -46,7 +45,7 @@ const HeaderMenu = styled.div`
 
     ul{
         height:70px;
-        width: 550px;
+        width: 700px;
         /* background: red; */
         display: flex;
         align-items: center;
@@ -61,7 +60,7 @@ const HeaderMenu = styled.div`
             a{
                 display: block;
                 height: 30px;
-                width: 120px;   
+                width: 160px;   
                 border: 5px solid ${Color__azulOscuro};
                 font-size: 1.2em;
                 color: ${Color__azulOscuro};
@@ -91,13 +90,13 @@ function Header (){
             <HeaderMenu>
                 <ul>
                     <li>
-                        <a href="/">ABOUT</a>
+                        <a href="/">NOSOTROS</a>
                     </li>
                     <li>
-                        <a href="/"></a>
+                        <a href="/">TECNOLOGIAS</a>
                     </li>
                     <li>
-                        <a href="/"></a>
+                        <a href="/">CONTACTO</a>
                     </li>
                 </ul>
             </HeaderMenu>
