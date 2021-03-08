@@ -34,6 +34,7 @@ const HomeHero = styled.div`
             width: 50%;
     
             h1{
+                margin-top: 100px;
                 text-align: center;
                 font-size:5em;
                 font-weight: lighter;
@@ -154,10 +155,6 @@ const HomeSectionContact = styled(HomeSection)`
 
 const HomeSectionClients= styled(HomeSection)`
     background: ${Color__celesteClaro};
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     div{
         width: 100%;
         ul{
@@ -168,6 +165,7 @@ const HomeSectionClients= styled(HomeSection)`
             align-items: center;
             width: 100%;
             padding: 0;
+            margin-bottom: 3%;
 
             li{
                 display: flex;
@@ -177,15 +175,17 @@ const HomeSectionClients= styled(HomeSection)`
                 margin-left: 4%;
                 height: auto;
                 width: 200px;
-                margin-bottom: 3%;
-                border-radius: 50%;
-                img{
-                    height: auto;
-                    max-height: 100%;
-                    width: auto;
-                    max-width: 200px;
+                
+                a{
                     border-radius: 50%;
-                }
+                   img{
+                        height: auto;
+                        max-height: 100%;
+                        width: auto;
+                        max-width: 200px;
+                        border-radius: inherit;
+                    } 
+                } 
             }
         }
     }    
@@ -245,9 +245,21 @@ function Home(){
                 <div>
                     <SectionTitleFont>CLIENTES</SectionTitleFont>
                     <ul>
-                        <li><img src={fran} alt="Logo de Varvlab"/></li>
-                        <li><img src={neoyoga} alt="Logo de TuCancha"/></li>
-                        <li><img src={tucancha} alt="Logo de Neo Yoga"/></li>
+                        <li>
+                            <a href="https://varvlab.com/" target="__blank">
+                                <img src={fran} alt="Logo de Varvlab"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://varvlab.com/" target="__blank">
+                                <img src={neoyoga} alt="Logo de TuCancha"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://varvlab.com/" target="__blank">
+                                <img src={tucancha} alt="Logo de Neo Yoga"/>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </HomeSectionClients>    
