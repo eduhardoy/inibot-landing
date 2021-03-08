@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import ContactForm from '../components/ContactForm';
+
 import { Color__celeste, Color__celesteClaro} from '../styled';
 import banner from '../images/banner.png';
 import grua from '../images/grua.png';
@@ -58,15 +60,19 @@ const SectionTitleFont = styled.p` //titulo de cada seccion
 
 const HomeSection = styled.section`
     height:450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 `;
 
 const HomeSectionTecno = styled(HomeSection)`
     background: ${Color__celeste};
-    display: flex;
+   /*  display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
     div{
 
@@ -102,10 +108,10 @@ const HomeSectionTecno = styled(HomeSection)`
 const HomeSectionAbout = styled(HomeSection)`
     /* background: orange; */
     height:320px;
-    display: flex;
+   /*  display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     h2{
         max-width: 1200px;
         text-align:center;
@@ -148,10 +154,10 @@ const HomeSectionContact = styled(HomeSection)`
 
 const HomeSectionClients= styled(HomeSection)`
     background: ${Color__celesteClaro};
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     div{
         width: 100%;
         ul{
@@ -167,8 +173,8 @@ const HomeSectionClients= styled(HomeSection)`
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-right: 2.5%;
-                margin-left: 2.5%;
+                margin-right: 4%;
+                margin-left: 4%;
                 height: auto;
                 width: 200px;
                 margin-bottom: 3%;
@@ -230,10 +236,11 @@ function Home(){
                         <img src={image} alt="Developer"/>
                     </div>
                     <div className="Contact__container-form">
-                        Formulario
+                        <ContactForm/>
                     </div>
                 </div>
             </HomeSectionContact>
+            <br/><br/>
             <HomeSectionClients>
                 <div>
                     <SectionTitleFont>CLIENTES</SectionTitleFont>

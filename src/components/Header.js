@@ -59,7 +59,7 @@ const HeaderMenu = styled.div`
             
             a{
                 display: block;
-                height: 30px;
+                height: 40px;
                 width: 160px;   
                 border: 5px solid ${Color__azulOscuro};
                 font-size: 1.2em;
@@ -67,7 +67,7 @@ const HeaderMenu = styled.div`
                 border-radius: 6px;
                 text-align: center;
                 text-decoration: none;
-                line-height: 30px;
+                line-height: 40px;
                                 
                 :hover{
                     color: white;
