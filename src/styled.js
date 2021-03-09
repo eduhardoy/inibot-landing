@@ -2,11 +2,8 @@ import styled, {createGlobalStyle}  from 'styled-components';
 
 //colores
 export const Color__azulOscuro = '#001A46;'
-
 export const Color__azul = '#084C94;'
-
 export const Color__celeste = '#D1EBFF;'
-
 export const Color__celesteClaro = '#F0F8FF;'
 
 //GlobalStyle
@@ -18,10 +15,8 @@ export const GlobalStyle = createGlobalStyle `
         font-family: 'Fredoka One', cursive;
     }
 `
-
 /* Cargar una tipografía:
 usando GlobalStyle:
-
 export const GlobalStyle = createGlobalStyle`
 	@font-face {
         font-family: myFont;
@@ -29,33 +24,22 @@ export const GlobalStyle = createGlobalStyle`
     }
 `; */
 
+const size = {
+    mobileS: '320px',
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopL: '1440px',
+    desktop: '2560px'
+  }
 
-
-/* 
-Ejemplo video edu
-
-export const Cuadrado = styled.div`
-    width: 70px;
-    height: 70px;
-    background-color: pink;
-    
-
-    :hover{
-        background-color: red;
-    }
-`;
-
-export const Rectangulo = styled(Cuadrado)`
-    width: 200px;
-`;
-
-export const Component = styled.div`
-    background-color: ${({isRight}) => isRight ? 'green' : 'red'};
-`;
-
-export const Input = styled.input.attrs(props => ({
-    type: "password",
-    maxLength: props.myMaxLength || 5,
-    }))`
-  color: blue;
-`; */
+export const device = {
+    mobileS: `(min-width: ${size.mobileS}) and (max-width: 374px)`,
+    mobileM: `(min-width: ${size.mobileM}) and (max-width: 424px)`,
+    mobileL: `(min-width: ${size.mobileL}) and (max-width: 767px)`,
+    tablet: `(min-width: ${size.tablet}) and (max-width: 1023px)`,
+    laptop: `(min-width: ${size.laptop}) and (max-width: 1439px)`,
+    laptopL: `(min-width: ${size.laptopL}) and (max-width: 2559px)`,
+    desktop: `(min-width: ${size.desktop})`
+  };
