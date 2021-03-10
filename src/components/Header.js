@@ -60,7 +60,7 @@ const HeaderLogo = styled.div`
     }
 
     @media ${device.mobileS}{
-        width: 80%;
+        width: 60%;
         margin: auto;
         div{
             width:60%;
@@ -72,7 +72,7 @@ const HeaderLogo = styled.div`
         }
     }
     @media ${device.mobileM}{
-        width: 80%;
+        width: 60%;
         margin: auto;
         div{
             width:60%;
@@ -84,7 +84,7 @@ const HeaderLogo = styled.div`
         }
     }
     @media ${device.mobileL}{
-        width: 80%;
+        width: 60%;
         margin: auto;
         div{
             width:60%;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {Color__azulOscuro} from '../styled';
+import {Color__azulOscuro, device} from '../styled';
 
 const Formulario = styled.div`
     display: flex;
@@ -14,6 +14,7 @@ const Formulario = styled.div`
     
 
     h2{
+        text-align:center;
         font-weight: lighter;
     }
 
@@ -31,7 +32,7 @@ const Formulario = styled.div`
     textarea{
         resize: none;
         border: solid 2px ${Color__azulOscuro};
-        height: 35%;
+        height: 40%;
         width: 80%;
         padding: 10px;
         font-size: 18px; 
@@ -51,6 +52,8 @@ const Formulario = styled.div`
             background: ${Color__azulOscuro};
         }
     }
+
+    
 `;
 
 function ContactForm(){

@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 import ContactForm from '../components/ContactForm';
 
-import { Color__celeste, Color__celesteClaro} from '../styled';
+import { device } from '../styled';
+import { Color__celeste, Color__celesteClaro ,} from '../styled';
 import banner from '../images/banner.png';
 import grua from '../images/grua.png';
 import html from '../images/html.png';
@@ -21,9 +22,13 @@ import tucancha from '../images/tucancha.jpg';
 
 
 const HomeHero = styled.div`
-    height:970px; 
-    background: url(${banner}); // la img tiene 1080 de alto
+    
+    /* height:970px;  */
+    background: url(${banner}); 
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 110px;
+    
 
     .Hero__container{
         margin-top: 100px;
@@ -34,9 +39,9 @@ const HomeHero = styled.div`
             width: 50%;
     
             h1{
-                margin-top: 100px;
+                margin-top: 13%;
                 text-align: center;
-                font-size:5em;
+                font-size:5vw;
                 font-weight: lighter;
             }
         }
@@ -46,34 +51,124 @@ const HomeHero = styled.div`
             text-align: center;
 
             img{
-                height: auto; //700px
-                width: 100%;
+                height: auto; 
+                width: 95%;
+                margin-bottom:50px;
             }
+        }
+    }
+
+    @media ${device.mobileS}{
+        padding-top: 10px;
+        .Hero__container{
+            flex-direction: column;
+
+            .Hero__container-title{
+                width: 100%;
+                h1{
+                    margin-top: 0;
+                    font-size: 10vw;
+                }
+            }
+
+            .Hero__container-img{
+                width:100%;
+                text-align: center;
+            
+                img{
+                    height: auto; 
+                    width: 85%;
+                    margin-bottom:20px;
+                }
+            }    
+        }
+        
+    }
+
+    @media ${device.mobileM}{
+        padding-top: 10px;
+        .Hero__container{
+            flex-direction: column;
+
+            .Hero__container-title{
+                width: 100%;
+                h1{
+                    margin-top: 0;
+                    font-size: 10vw;
+                }
+            }
+
+            .Hero__container-img{
+                width:100%;
+                text-align: center;
+            
+                img{
+                    height: auto; 
+                    width: 85%;
+                    margin-bottom:20px;
+                }
+            }    
+        }
+    }
+
+    @media ${device.mobileL}{
+        padding-top: 10px;
+        .Hero__container{
+            flex-direction: column;
+
+            .Hero__container-title{
+                width: 100%;
+                h1{
+                    margin-top: 0;
+                    font-size: 10vw;
+                }
+            }
+
+            .Hero__container-img{
+                width:100%;
+                text-align: center;
+            
+                img{
+                    height: auto; 
+                    width: 85%;
+                    margin-bottom:20px;
+                }
+            }    
         }
     }
 `;
 
 const SectionTitleFont = styled.p` //titulo de cada seccion
-    font-size: 2.7em;
+    font-size: 2vw;
     font-weight: lighter;
     text-align: center;
+    
+    @media ${device.mobileS}{
+        font-size: 7vw;
+    }
+    @media ${device.mobileM}{
+        font-size: 7vw;
+    }
+    @media ${device.mobileL}{
+        font-size: 7vw;
+    }
+    @media ${device.tablet}{
+        font-size: 4vw;
+    }
 `;
 
-const HomeSection = styled.section`
-    height:450px;
+const HomeSection = styled.section` //preset para cada seccion
+    height:auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    padding-top:2%;
+    padding-bottom:2%;
 `;
 
 const HomeSectionTecno = styled(HomeSection)`
     background: ${Color__celeste};
-   /*  display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 
     div{
 
@@ -104,30 +199,102 @@ const HomeSectionTecno = styled(HomeSection)`
             }
         }
     }
+
+    @media ${device.mobileS}{
+        
+        height: auto;
+        div{
+
+            ul{
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 1%;
+                    margin-left: 1%;
+                    height: 60px;
+                    width: 110px;
+                    margin-bottom: 3%;
+                    img{
+                        height: auto;
+                        max-height: 100%;
+                        width: auto;
+                        max-width: 130px;
+                    }
+                }
+            }
+        }
+
+    }
+    @media ${device.mobileM}{
+        height: auto;
+    }   
+    @media ${device.mobileL}{
+        height: auto;
+    }
 `;
 
 const HomeSectionAbout = styled(HomeSection)`
-    /* background: orange; */
-    height:320px;
-   /*  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+
+    height:auto;
+    margin-top:10px;
     h2{
-        max-width: 1200px;
+        
         text-align:center;
         font-weight: lighter;
+        font-size: 1.25vw;
+        width: 80%;
+        
     }
 
+    @media ${device.mobileS}{
+        h2{
+            font-size:5vw;
+            padding-right: 5%;
+            padding-left: 5%;
+            text-align: justify;
+        }
+    }
+
+    @media ${device.mobileM}{
+        h2{
+            font-size:5vw;
+            padding-right: 5%;
+            padding-left: 5%;
+            text-align: justify;
+        }
+    }
+
+    @media ${device.mobileL}{
+        h2{
+            font-size:5vw;
+            padding-right: 5%;
+            padding-left: 5%;
+            text-align: justify;
+        }
+    }
+    @media ${device.tablet}{
+        h2{
+            font-size:1.7vw;
+        }
+    }
 `;
 
 const HomeSectionContact = styled(HomeSection)`
-    height: 500px;
-
+    
     .Contact__container{
         margin: auto;
         display: flex; 
         width:80%;
+        max-width: 1080px;
         
         .Contact__container-img{
             /* background: blue; */
@@ -136,13 +303,12 @@ const HomeSectionContact = styled(HomeSection)`
             display: flex;
             justify-content: center;
             align-items: center;
-                img{
-                   width: auto;
-                    height: 80%; 
-                } 
-            }
+            img{
+                width: 80%;
+                height: auto; 
+            } 
         }
-
+        
         .Contact__container-form{
             height: 460px;
             width:50%;
@@ -151,6 +317,71 @@ const HomeSectionContact = styled(HomeSection)`
             align-items: center;
         }
     }
+
+    @media ${device.mobileS}{
+        .Contact__container{
+            flex-direction: column;
+
+            .Contact__container-img{
+                height: auto;
+                width:100%;
+            
+                img{
+                    width: 50%;
+                    
+                } 
+            }
+            
+            .Contact__container-form{
+                height: auto;
+                width:100%;
+                
+            }
+        }
+    }
+    @media ${device.mobileM}{
+        .Contact__container{
+            flex-direction: column;
+
+            .Contact__container-img{
+                height: auto;
+                width:100%;
+            
+                img{
+                    width: 50%;
+                    
+                } 
+            }
+            
+            .Contact__container-form{
+                height: auto;
+                width:100%;
+                
+            }
+        }
+    }
+    @media ${device.mobileL}{
+        .Contact__container{
+            flex-direction: column;
+
+            .Contact__container-img{
+                height: auto;
+                width:100%;
+            
+                img{
+                    width: 50%;
+                    
+                } 
+            }
+            
+            .Contact__container-form{
+                height: auto;
+                width:100%;
+                
+            }
+        }
+    }
+
 `;
 
 const HomeSectionClients= styled(HomeSection)`
@@ -174,21 +405,71 @@ const HomeSectionClients= styled(HomeSection)`
                 margin-right: 4%;
                 margin-left: 4%;
                 height: auto;
-                width: 200px;
+                width: 10%;
                 
                 a{
                     border-radius: 50%;
                    img{
                         height: auto;
                         max-height: 100%;
-                        width: auto;
-                        max-width: 200px;
+                        width: 100%;
+                        /* max-width: 200px; */
                         border-radius: inherit;
                     } 
                 } 
             }
         }
-    }    
+    }
+
+    @media ${device.mobileS}{
+        div{
+        
+        ul{
+            
+            li{
+                width: 35%;
+                
+            }
+        }
+    }
+    } 
+    @media ${device.mobileM}{
+        div{
+        
+        ul{
+            
+            li{
+                width: 35%;
+                
+            }
+        }
+    }
+    } 
+    @media ${device.mobileL}{
+        div{
+        
+        ul{
+            
+            li{
+                width: 35%;
+                
+            }
+        }
+    }
+    } 
+    @media ${device.tablet}{
+        div{
+        
+        ul{
+            
+            li{
+                width: 15%;
+                
+            }
+        }
+    }
+    } 
+       
 `;
 
 function Home(){
