@@ -5,22 +5,20 @@ import {Color__azulOscuro, device} from '../styled';
 import logo from '../images/paglogo.png';
 
 const HeaderBlock = styled.header`
+
     position: absolute;
-    
     height: 120px;
     width: 100%;
 `
 
 const HeaderContainer = styled.div`
     
-    /* position: absolute; */
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     max-width:1920px;
     margin: auto;
-    
     
     @media ${device.mobileS}{
         flex-direction: column;
@@ -31,11 +29,7 @@ const HeaderContainer = styled.div`
     @media ${device.mobileL}{
         flex-direction: column;
     }
-    @media ${device.desktop}{
-    
-    
-       
-    }
+   
 `; 
 
 const HeaderLogo = styled.div`
@@ -44,14 +38,11 @@ const HeaderLogo = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* background: lightblue; */
     
     div{
         height: 70px;
         width:40%;
         margin-left: 100px;
-        /* margin-left: 120px; */
-        /* background: pink; */
         
         img{
             width: auto;
@@ -71,6 +62,7 @@ const HeaderLogo = styled.div`
             }
         }
     }
+
     @media ${device.mobileM}{
         width: 60%;
         margin: auto;
@@ -83,6 +75,7 @@ const HeaderLogo = styled.div`
             }
         }
     }
+
     @media ${device.mobileL}{
         width: 60%;
         margin: auto;
@@ -97,17 +90,16 @@ const HeaderLogo = styled.div`
     }
 
     @media ${device.tablet}{
-        width: 40%;
+        width: 30%;
         div{
             width:60%;
             margin: auto;
-            /* margin-right: 120px; */
+        
             img{
                 width: 90%;
                 height: auto;
-                /* display: block; */
                 margin: 10px;
-                margin-top: 13px;
+                margin-top: 16px;
                 
             }
         }
@@ -115,8 +107,14 @@ const HeaderLogo = styled.div`
 `;
 
 const HeaderMenu = styled.div`
-    
     width: 50%;
+    display: flex;
+    justify-content: center;
+`;
+
+const MenuNav = styled.nav`
+    
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -124,7 +122,6 @@ const HeaderMenu = styled.div`
     ul{
         height:70px;
         width: 700px;
-        /* background: red; */
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -137,7 +134,7 @@ const HeaderMenu = styled.div`
             
             a{
                 display: block;
-                height: 40px;
+                height: 45px;
                 width: 160px;   
                 border: 5px solid ${Color__azulOscuro};
                 font-size: 1.2em;
@@ -147,7 +144,7 @@ const HeaderMenu = styled.div`
                 border-radius: 6px;
                 text-align: center;
                 text-decoration: none;
-                line-height: 40px;
+                line-height: 45px;
                                 
                 :hover{
                     color: white;
@@ -168,18 +165,19 @@ const HeaderMenu = styled.div`
     }
 
     @media ${device.tablet}{
-        width:60%;
-        margin-right: 20px;
+        width:100%;
+        
         ul{
             width:100%;
             margin: auto;
             
+            
             li{
 
                 a{
-                    width: 120px;
+                    width: 100px;
                     height: 30px;
-                    font-size: 1em;
+                    font-size: .8em;
                     line-height: 30px;
                 }
             }
@@ -192,7 +190,7 @@ const HeaderMenu = styled.div`
             li{
                 margin-right: 10px;
                 a{
-                    /* width: 150px; */
+                    
                 }
             }
         }
@@ -211,17 +209,19 @@ function Header (){
                     </div>
                 </HeaderLogo>
                 <HeaderMenu>
-                    <ul>
-                        <li>
-                            <a href="/">NOSOTROS</a>
-                        </li>
-                        <li>
-                            <a href="/">TECNOLOGIAS</a>
-                        </li>
-                        <li>
-                            <a href="/">CONTACTO</a>
-                        </li>
-                    </ul>
+                    <MenuNav>
+                        <ul>
+                            <li>
+                                <a href="#about">NOSOTROS</a>
+                            </li>
+                            <li>
+                                <a href="#tecno">TECNOLOGIAS</a>
+                            </li>
+                            <li>
+                                <a href="#about">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </MenuNav>
                 </HeaderMenu>
             </HeaderContainer>
         </HeaderBlock>

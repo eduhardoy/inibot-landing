@@ -488,7 +488,7 @@ function Home(){
             </HomeHero>
             <HomeSectionTecno>
                 <div>
-                    <SectionTitleFont>TECNOLOGIAS</SectionTitleFont>
+                    <SectionTitleFont id="tecno">TECNOLOGIAS</SectionTitleFont>
                     <ul>
                         <li><img src={html} alt="Logo de HTML"/></li>
                         <li><img src={react} alt="Logo de React"/></li>
@@ -501,7 +501,7 @@ function Home(){
                     </ul>
                 </div>
             </HomeSectionTecno>
-            <HomeSectionAbout>
+            <HomeSectionAbout id="about">
                 <SectionTitleFont>SOBRE NOSOTROS</SectionTitleFont>
                 <h2>
                     En INIBOT ofrecemos soluciones a medida de Desarrollo de Software.
@@ -512,7 +512,7 @@ function Home(){
                 </h2>
             </HomeSectionAbout>
             <HomeSectionContact>
-                <div className="Contact__container">
+                <div className="Contact__container" id="contact">
                     <div className="Contact__container-img">
                         <img src={image} alt="Developer"/>
                     </div>
