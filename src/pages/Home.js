@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import ContactForm from '../components/ContactForm';
 
 import { device } from '../styled';
-import { Color__celeste, Color__celesteClaro ,} from '../styled';
+import { Color__celeste, Color__celesteClaro} from '../styled';
 import banner from '../images/banner.png';
 import grua from '../images/grua.png';
 import html from '../images/html.png';
@@ -27,9 +27,10 @@ const HomeHero = styled.div`
     background: url(${banner}); 
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 110px;
+    padding-top: 120px;
+    height: 100vh;
+   
     
-
     .Hero__container{
         margin-top: 100px;
         display: flex;
@@ -52,7 +53,7 @@ const HomeHero = styled.div`
 
             img{
                 height: auto; 
-                width: 95%;
+                width: 88%;
                 margin-bottom:50px;
             }
         }
@@ -130,12 +131,20 @@ const HomeHero = styled.div`
             
                 img{
                     height: auto; 
-                    width: 85%;
+                    width: 70%;
                     margin-bottom:20px;
                 }
             }    
         }
     }
+
+    @media ${device.laptop}{
+        .Hero__container{
+            margin-top: 1vh;
+        }
+    }
+   
+    
 `;
 
 const SectionTitleFont = styled.p` //titulo de cada seccion

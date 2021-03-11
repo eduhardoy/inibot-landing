@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {Color__azulOscuro, device} from '../styled';
+import {Color__azulOscuro} from '../styled';
 
 const Formulario = styled.div`
     display: flex;

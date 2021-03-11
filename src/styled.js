@@ -1,4 +1,4 @@
-import styled, {createGlobalStyle}  from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 
 //colores
 export const Color__azulOscuro = '#001A46;'
@@ -10,6 +10,7 @@ export const Color__celesteClaro = '#F0F8FF;'
 export const GlobalStyle = createGlobalStyle `
 
     body{
+        height: 100%;
         margin: 0;
         color: ${Color__azulOscuro};
         font-family: 'Fredoka One', cursive;
@@ -24,6 +25,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 `; */
 
+
+//device breakpoints
 const size = {
     mobileS: '320px',
     mobileM: '375px',
@@ -33,7 +36,7 @@ const size = {
     laptopL: '1440px',
     desktop: '2560px'
   }
-
+//queries
 export const device = {
     mobileS: `(min-width: ${size.mobileS}) and (max-width: 374px)`,
     mobileM: `(min-width: ${size.mobileM}) and (max-width: 424px)`,

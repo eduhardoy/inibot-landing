@@ -7,18 +7,18 @@ import logo from '../images/paglogo.png';
 const HeaderBlock = styled.header`
 
     position: absolute;
-    height: 120px;
+    /* height: 120px; */
     width: 100%;
 `
 
 const HeaderContainer = styled.div`
     
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     max-width:1920px;
-    margin: auto;
+    /* margin: auto; */
     
     @media ${device.mobileS}{
         flex-direction: column;
@@ -33,20 +33,24 @@ const HeaderContainer = styled.div`
 `; 
 
 const HeaderLogo = styled.div`
-    
+    /* background: orange; */
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background: yellow;
     
     div{
-        height: 70px;
-        width:40%;
+        /* height: 70px; */
+        width:50%;
         margin-left: 100px;
+        /* background: red; */
+        display: flex;
+        justify-content: center;
         
         img{
-            width: auto;
-            height: 70px;
+            width: 50%;
+            height: auto;
         }
     }
 
@@ -110,41 +114,50 @@ const HeaderMenu = styled.div`
     width: 50%;
     display: flex;
     justify-content: center;
+    background: pink;
+    
 `;
 
 const MenuNav = styled.nav`
     
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
+    background: green;
+    width: 80%;
+    
     ul{
-        height:70px;
-        width: 700px;
+        /* height:70px; */
+        height: 50%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: row;
         list-style-type: none;
         padding: 0;
-        margin-right: 100px;
+        /* margin-right: 100px; */
+        background: orange;
 
         li{
-            
+                height: 100%;
+                width: 160px;
             a{
                 display: block;
                 height: 45px;
-                width: 160px;   
-                border: 5px solid ${Color__azulOscuro};
+                width: 160px;
+                border: 7px solid ${Color__azulOscuro};
                 font-size: 1.2em;
                 color: ${Color__azulOscuro};
                 transition: background-color .2s;
                 transition: color .2s;
-                border-radius: 6px;
-                text-align: center;
+                border-radius: 10px;
+                
                 text-decoration: none;
-                line-height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                                 
                 :hover{
                     color: white;
@@ -170,7 +183,6 @@ const MenuNav = styled.nav`
         ul{
             width:100%;
             margin: auto;
-            
             
             li{
 
