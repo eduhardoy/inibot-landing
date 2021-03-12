@@ -27,14 +27,19 @@ const HomeHero = styled.div`
     background: url(${banner}); 
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 120px;
+    padding-top: 120px; 
     height: 100vh;
+    display: flex;
+    justify-content: center;
+
    
     
     .Hero__container{
-        margin-top: 100px;
+        margin-top: 90px;
         display: flex;
         flex-direction: row;
+        max-width: 1920px;
+
 
         .Hero__container-title{
             width: 50%;
@@ -53,16 +58,17 @@ const HomeHero = styled.div`
 
             img{
                 height: auto; 
-                width: 88%;
+                width: 85%;
                 margin-bottom:50px;
             }
         }
     }
 
     @media ${device.mobileS}{
-        padding-top: 10px;
+        
         .Hero__container{
             flex-direction: column;
+
 
             .Hero__container-title{
                 width: 100%;
@@ -79,7 +85,8 @@ const HomeHero = styled.div`
                 img{
                     height: auto; 
                     width: 85%;
-                    margin-bottom:20px;
+                    margin-top: 80px;
+                    
                 }
             }    
         }
@@ -87,7 +94,7 @@ const HomeHero = styled.div`
     }
 
     @media ${device.mobileM}{
-        padding-top: 10px;
+        
         .Hero__container{
             flex-direction: column;
 
@@ -106,14 +113,15 @@ const HomeHero = styled.div`
                 img{
                     height: auto; 
                     width: 85%;
-                    margin-bottom:20px;
+                    margin-top: 80px;
+                    
                 }
             }    
         }
     }
 
     @media ${device.mobileL}{
-        padding-top: 10px;
+        
         .Hero__container{
             flex-direction: column;
 
@@ -132,10 +140,30 @@ const HomeHero = styled.div`
                 img{
                     height: auto; 
                     width: 70%;
-                    margin-bottom:20px;
+                    margin-top: 80px;
+                   
                 }
             }    
         }
+    }
+
+    @media ${device.tablet}{
+            .Hero__container{
+                flex-direction: column;
+                align-items: center;
+                
+                .Hero__container-title{
+                    width: 100%;
+                    h1{
+                        margin-top: 0;
+                    }
+                }
+
+                .Hero__container-img{
+                    width: 80%;
+                    margin-top: 80px;
+                }
+            }
     }
 
     @media ${device.laptop}{
