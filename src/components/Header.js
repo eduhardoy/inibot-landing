@@ -9,15 +9,18 @@ const HeaderBlock = styled.header`
     position: absolute;
     /* height: 120px; */
     width: 100%;
+    justify-content: center;
+    display:flex;
 `
 
 const HeaderContainer = styled.div`
     
-    /* height: 100%; */
+    /* height: 100%; */ 
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     max-width:1920px;
+    /* justify-content: center; */
+    
     /* margin: auto; */
     
     @media ${device.mobileS}{
@@ -44,13 +47,14 @@ const HeaderLogo = styled.div`
         /* height: 70px; */
         width:50%;
         margin-left: 100px;
-        /* background: red; */
+        background: red;
         display: flex;
         justify-content: center;
         
         img{
             width: 50%;
             height: auto;
+            background: blue;
         }
     }
 
@@ -123,17 +127,17 @@ const MenuNav = styled.nav`
     /* width: 100%; */
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     background: green;
     width: 80%;
     
     ul{
         /* height:70px; */
-        height: 50%;
-        width: 100%;
+        /* height: 70%;*/
+        width: 100%; 
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
         list-style-type: none;
         padding: 0;
@@ -141,19 +145,20 @@ const MenuNav = styled.nav`
         background: orange;
 
         li{
-                height: 100%;
-                width: 160px;
+                /* height: 100%;
+                width: 160px; */
+                /* padding: auto; */
+                margin: 0 2%;
             a{
-                display: block;
-                height: 45px;
-                width: 160px;
+                /* display: block; */
+                height: 2.2vw;
+                width: 9vw;
                 border: 7px solid ${Color__azulOscuro};
-                font-size: 1.2em;
+                font-size: 1vw;
                 color: ${Color__azulOscuro};
                 transition: background-color .2s;
                 transition: color .2s;
                 border-radius: 10px;
-                
                 text-decoration: none;
                 display: flex;
                 align-items: center;
@@ -198,9 +203,9 @@ const MenuNav = styled.nav`
 
     @media ${device.laptop}{
         ul{
-            margin-right: 30px;
+            
             li{
-                margin-right: 10px;
+                
                 a{
                     
                 }
