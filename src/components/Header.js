@@ -7,21 +7,16 @@ import logo from '../images/paglogo.png';
 const HeaderBlock = styled.header`
 
     position: absolute;
-    /* height: 120px; */
     width: 100%;
     justify-content: center;
     display:flex;
 `
 
 const HeaderContainer = styled.div`
-    
-    /* height: 100%; */ 
     width: 100%;
     display: flex;
     max-width:1920px;
-    /* justify-content: center; */
-    
-    /* margin: auto; */
+    margin-top: 20px;
     
     @media ${device.mobileS}{
         flex-direction: column;
@@ -36,25 +31,20 @@ const HeaderContainer = styled.div`
 `; 
 
 const HeaderLogo = styled.div`
-    /* background: orange; */
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: yellow;
     
     div{
-        /* height: 70px; */
         width:50%;
         margin-left: 100px;
-        background: red;
         display: flex;
         justify-content: center;
         
         img{
             width: 50%;
             height: auto;
-            background: blue;
         }
     }
 
@@ -97,43 +87,23 @@ const HeaderLogo = styled.div`
         }
     }
 
-    @media ${device.tablet}{
-        width: 30%;
-        div{
-            width:60%;
-            margin: auto;
-        
-            img{
-                width: 90%;
-                height: auto;
-                margin: 10px;
-                margin-top: 16px;
-                
-            }
-        }
-    }
 `;
 
 const HeaderMenu = styled.div`
     width: 50%;
     display: flex;
     justify-content: center;
-    background: pink;
     
 `;
 
 const MenuNav = styled.nav`
-    
-    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    background: green;
     width: 80%;
+    height: 100%;
     
     ul{
-        /* height:70px; */
-        /* height: 70%;*/
         width: 100%; 
         display: flex;
         align-items: center;
@@ -141,19 +111,14 @@ const MenuNav = styled.nav`
         flex-direction: row;
         list-style-type: none;
         padding: 0;
-        /* margin-right: 100px; */
-        background: orange;
 
         li{
-                /* height: 100%;
-                width: 160px; */
-                /* padding: auto; */
                 margin: 0 2%;
             a{
-                /* display: block; */
+                display: block;
                 height: 2.2vw;
                 width: 9vw;
-                border: 7px solid ${Color__azulOscuro};
+                border: .4vw solid ${Color__azulOscuro};
                 font-size: 1vw;
                 color: ${Color__azulOscuro};
                 transition: background-color .2s;
@@ -182,32 +147,16 @@ const MenuNav = styled.nav`
         display: none;
     }
 
-    @media ${device.tablet}{
-        width:100%;
-        
-        ul{
-            width:100%;
-            margin: auto;
-            
-            li{
+    
 
-                a{
-                    width: 100px;
-                    height: 30px;
-                    font-size: .8em;
-                    line-height: 30px;
-                }
-            }
-        }
-    }
-
-    @media ${device.laptop}{
+    @media ${device.desktop}{
         ul{
             
             li{
                 
                 a{
-                    
+                    height: 2vw;
+                    width: 8vw;
                 }
             }
         }
