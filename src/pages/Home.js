@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ContactForm from '../components/ContactForm';
+import ContactForm from '../components/home/ContactForm';
 
 import { device } from '../styled';
 import { Color__celeste, Color__celesteClaro} from '../styled';
@@ -27,25 +27,26 @@ const HomeHero = styled.div`
     background: url(${banner}); 
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 120px; 
-    height: 100vh;
+    padding-top: 95px; //altura del header
+    height: /* calc(100vh - 95px) */ 100vh;
     display: flex;
     justify-content: center;
 
    
     
     .Hero__container{
-        margin-top: 90px;
+        /* margin-top: 90px; */
         display: flex;
         flex-direction: row;
         max-width: 1920px;
-
-
+        width:100%;
+        
         .Hero__container-title{
             width: 50%;
+            background:green;
     
             h1{
-                margin-top: 13%;
+                margin-top: 180px;
                 text-align: center;
                 font-size:5vw;
                 font-weight: lighter;
@@ -53,13 +54,15 @@ const HomeHero = styled.div`
         }
 
         .Hero__container-img{
+            height: 550px;
             width:50%;
             text-align: center;
+            background-color:red;
 
             img{
                 height: auto; 
-                width: 85%;
-                margin-bottom:50px;
+                width: 80%;
+                
             }
         }
     }
@@ -341,7 +344,7 @@ const HomeSectionContact = styled(HomeSection)`
             justify-content: center;
             align-items: center;
             img{
-                width: 80%;
+                width: 70%;
                 height: auto; 
             } 
         }
@@ -570,12 +573,12 @@ function Home(){
                         </li>
                         <li>
                             <a href="https://varvlab.com/" target="__blank">
-                                <img src={neoyoga} alt="Logo de TuCancha"/>
+                                <img src={neoyoga} alt="Logo de Neo Yoga"/>
                             </a>
                         </li>
                         <li>
                             <a href="https://varvlab.com/" target="__blank">
-                                <img src={tucancha} alt="Logo de Neo Yoga"/>
+                                <img src={tucancha} alt="Logo de TuCancha"/>
                             </a>
                         </li>
                     </ul>

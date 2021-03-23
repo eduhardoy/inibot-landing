@@ -5,18 +5,19 @@ import {Color__azulOscuro, device} from '../styled';
 import logo from '../images/paglogo.png';
 
 const HeaderBlock = styled.header`
-
     position: absolute;
     width: 100%;
     justify-content: center;
     display:flex;
-`
+`;
 
 const HeaderContainer = styled.div`
     width: 100%;
     display: flex;
     max-width:1920px;
     margin-top: 20px;
+    height: 75px;
+    /* background-color: red; */
     
     @media ${device.mobileS}{
         flex-direction: column;
@@ -37,14 +38,14 @@ const HeaderLogo = styled.div`
     justify-content: flex-start;
     
     div{
-        width:50%;
+        height:60px;
         margin-left: 100px;
         display: flex;
         justify-content: center;
         
         img{
-            width: 50%;
-            height: auto;
+            width: auto;
+            height: 100%;
         }
     }
 
@@ -92,7 +93,7 @@ const HeaderLogo = styled.div`
 const HeaderMenu = styled.div`
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     
 `;
 
@@ -100,26 +101,29 @@ const MenuNav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    /* width: 500px; */
     height: 100%;
+    /* background: green; */
     
     ul{
-        width: 100%; 
+        /* width: 100%;  */
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         list-style-type: none;
         padding: 0;
+        /* background: orange; */
+        margin-right:90px;
 
         li{
-                margin: 0 2%;
+                margin: 0 10px;
             a{
                 display: block;
-                height: 2.2vw;
-                width: 9vw;
-                border: .4vw solid ${Color__azulOscuro};
-                font-size: 1vw;
+                height: 35px;
+                width: 130px;
+                border: 6px solid ${Color__azulOscuro};
+                /* font-size: 1vw; */
                 color: ${Color__azulOscuro};
                 transition: background-color .2s;
                 transition: color .2s;

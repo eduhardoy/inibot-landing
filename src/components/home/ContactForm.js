@@ -1,18 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {Color__azulOscuro} from '../styled';
+import {Color__azulOscuro} from '../../styled';
 
-const Formulario = styled.div`
+const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     height:90%;
     width:80%;
-    /* background: red; */
-    
-
     h2{
         text-align:center;
         font-weight: lighter;
@@ -51,23 +47,19 @@ const Formulario = styled.div`
             color: white;
             background: ${Color__azulOscuro};
         }
-    }
-
-    
+    } 
 `;
 
 function ContactForm(){
     return(
         <React.Fragment>
-            <Formulario>
-                
+            <Form>
                     <h2>ENVIANOS TU MENSAJE</h2>
                     <input className="Input-nombre" type="text" placeholder="Nombre"/>
                     <input className="Input-email" type="email" placeholder="Email"/>
                     <textarea className="Input-msj"/>
                     <button>ENVIAR</button>
-                
-            </Formulario>
+            </Form>
         </React.Fragment>
     );
 }
