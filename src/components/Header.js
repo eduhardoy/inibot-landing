@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {Color__azulOscuro, device} from '../styled';
-import logo from '../images/paglogo.png';
+import logo from '../images/logo4.png';
 
 const HeaderBlock = styled.header`
     position: absolute;
@@ -53,7 +53,8 @@ const HeaderLogo = styled.div`
         width: 60%;
         margin: auto;
         div{
-            width:60%;
+            height: auto;
+            width:50%;
             margin: auto;
             img{
                 width: 100%;
@@ -66,7 +67,8 @@ const HeaderLogo = styled.div`
         width: 60%;
         margin: auto;
         div{
-            width:60%;
+            height: auto;
+            width:50%;
             margin: auto;
             img{
                 width: 100%;
@@ -79,13 +81,32 @@ const HeaderLogo = styled.div`
         width: 60%;
         margin: auto;
         div{
-            width:60%;
+            height: auto;
+            width:50%;
             margin: auto;
             img{
                 width: 100%;
                 height: auto;
             }
         }
+    }
+    @media ${device.tablet}{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    
+    div{
+        height:50px;
+        margin-left: 50px;
+        display: flex;
+        justify-content: center;
+        
+        img{
+            width: auto;
+            height: 100%;
+        }
+    }
     }
 
 `;
@@ -101,29 +122,24 @@ const MenuNav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 500px; */
     height: 100%;
-    /* background: green; */
+    margin-right: 100px;
     
     ul{
-        /* width: 100%;  */
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         list-style-type: none;
-        padding: 0;
-        /* background: orange; */
-        margin-right:90px;
+        padding: 0;        
 
         li{
-                margin: 0 10px;
+                margin: 0 15px;
             a{
                 display: block;
                 height: 35px;
                 width: 130px;
                 border: 6px solid ${Color__azulOscuro};
-                /* font-size: 1vw; */
                 color: ${Color__azulOscuro};
                 transition: background-color .2s;
                 transition: color .2s;
@@ -151,8 +167,37 @@ const MenuNav = styled.nav`
         display: none;
     }
 
-    
+    @media ${device.tablet}{
+        margin-right: 20px;
+        ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;        
 
+        li{
+                margin: 0 10px;
+            a{
+                display: block;
+                height: 25px;
+                width: 100px;
+                font-size: 1.5vw;
+                border: 4px solid ${Color__azulOscuro};
+                color: ${Color__azulOscuro};
+                transition: background-color .2s;
+                transition: color .2s;
+                border-radius: 10px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    }
+    
     @media ${device.desktop}{
         ul{
             
@@ -188,7 +233,7 @@ function Header (){
                                 <a href="#tecno">TECNOLOGIAS</a>
                             </li>
                             <li>
-                                <a href="#about">CONTACTO</a>
+                                <a href="#contact">CONTACTO</a>
                             </li>
                         </ul>
                     </MenuNav>

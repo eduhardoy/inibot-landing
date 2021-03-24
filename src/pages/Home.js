@@ -27,8 +27,7 @@ const HomeHero = styled.div`
     background: url(${banner}); 
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 95px; //altura del header
-    height: /* calc(100vh - 95px) */ 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
 
@@ -43,10 +42,13 @@ const HomeHero = styled.div`
         
         .Hero__container-title{
             width: 50%;
-            background:green;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
     
             h1{
-                margin-top: 180px;
+                margin-bottom: 10%;
                 text-align: center;
                 font-size:5vw;
                 font-weight: lighter;
@@ -54,15 +56,27 @@ const HomeHero = styled.div`
         }
 
         .Hero__container-img{
-            height: 550px;
             width:50%;
-            text-align: center;
-            background-color:red;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+            /* background: orange; */
 
-            img{
-                height: auto; 
-                width: 80%;
+            div{
+                height: 90%;
+                width: 90%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
                 
+               /*  background: lightblue; */
+
+                img{
+                    height: auto; 
+                    width: 90%;
+                }
             }
         }
     }
@@ -74,23 +88,27 @@ const HomeHero = styled.div`
 
 
             .Hero__container-title{
+                height:20%;
                 width: 100%;
                 h1{
                     margin-top: 0;
-                    font-size: 10vw;
+                    margin-bottom: 0;
+                    font-size: 8vw;
                 }
             }
 
             .Hero__container-img{
                 width:100%;
                 text-align: center;
-            
-                img{
-                    height: auto; 
-                    width: 85%;
-                    margin-top: 80px;
+                div{
+                    img{
+                        height: auto; 
+                        width: 80%;
+                        margin-top: 0;
                     
+                    }
                 }
+                
             }    
         }
         
@@ -101,26 +119,32 @@ const HomeHero = styled.div`
         .Hero__container{
             flex-direction: column;
 
+
             .Hero__container-title{
+                height:20%;
                 width: 100%;
                 h1{
                     margin-top: 0;
-                    font-size: 10vw;
+                    margin-bottom: 0;
+                    font-size: 8vw;
                 }
             }
 
             .Hero__container-img{
                 width:100%;
                 text-align: center;
-            
-                img{
-                    height: auto; 
-                    width: 85%;
-                    margin-top: 80px;
+                div{
+                    img{
+                        height: auto; 
+                        width: 80%;
+                        margin-top: 0;
                     
+                    }
                 }
+                
             }    
         }
+        
     }
 
     @media ${device.mobileL}{
@@ -128,43 +152,49 @@ const HomeHero = styled.div`
         .Hero__container{
             flex-direction: column;
 
+
             .Hero__container-title{
+                height:20%;
                 width: 100%;
                 h1{
                     margin-top: 0;
-                    font-size: 10vw;
+                    margin-bottom: 0;
+                    font-size: 8vw;
                 }
             }
 
             .Hero__container-img{
                 width:100%;
                 text-align: center;
-            
-                img{
-                    height: auto; 
-                    width: 70%;
-                    margin-top: 80px;
-                   
+                div{
+                    img{
+                        height: auto; 
+                        width: 80%;
+                        margin-top: 0;
+                    
+                    }
                 }
+                
             }    
         }
+        
     }
 
     @media ${device.tablet}{
             .Hero__container{
-                flex-direction: column;
+                
                 align-items: center;
                 
                 .Hero__container-title{
                     width: 100%;
+                    margin-top: 100px;
                     h1{
-                        margin-top: 0;
+                        margin-bottom:0;
                     }
                 }
 
                 .Hero__container-img{
-                    width: 80%;
-                    margin-top: 80px;
+                    width: 40vw;
                 }
             }
     }
@@ -522,7 +552,9 @@ function Home(){
                         <h1>DESARROLLO<br/> DE SOFTWARE</h1>
                     </div>
                     <div className="Hero__container-img">
-                        <img src={grua} alt="Grua"/>
+                        <div>
+                            <img src={grua} alt="Grua"/>
+                        </div>
                     </div>
                 </div>
             </HomeHero>
@@ -551,7 +583,7 @@ function Home(){
                     un equipo de alta calidad humana y profesional.
                 </h2>
             </HomeSectionAbout>
-            <HomeSectionContact>
+            <HomeSectionContact id="contact">
                 <div className="Contact__container" id="contact">
                     <div className="Contact__container-img">
                         <img src={image} alt="Developer"/>
