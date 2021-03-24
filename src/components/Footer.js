@@ -17,13 +17,13 @@ const FooterContainer = styled.footer`
     color: white;
     font-family: 'Open Sans', sans-serif;
 
-    @media${device.mobileS}{
+    @media ${device.mobileS}{
         flex-direction: column-reverse;
     }
-    @media${device.mobileM}{
+    @media ${device.mobileM}{
         flex-direction: column-reverse;
     }
-    @media${device.mobileL}{
+    @media ${device.mobileL}{
         flex-direction: column-reverse;
     }
 `;
@@ -47,7 +47,7 @@ const ContactSection = styled.div`
             }            
         }
     }
-    @media${device.mobileS}{
+    @media ${device.mobileS}{
         width: 100%;
         ul{
             width:100%;
@@ -68,7 +68,7 @@ const ContactSection = styled.div`
             }
         }
     }
-    @media${device.mobileM}{
+    @media ${device.mobileM}{
         width: 100%;
         ul{
             width:100%;
@@ -84,7 +84,7 @@ const ContactSection = styled.div`
             }
         }
     }
-    @media${device.mobileL}{
+    @media ${device.mobileL}{
         width: 100%;
         ul{
             width:100%;
@@ -120,13 +120,13 @@ const About = styled.div`
     p{
         margin-top: 5px;
     }
-    @media${device.mobileS}{
+    @media ${device.mobileS}{
         margin-top: 20px;
     }
-    @media${device.mobileM}{
+    @media ${device.mobileM}{
         margin-top: 20px;
     }
-    @media${device.mobileL}{
+    @media ${device.mobileL}{
         margin-top: 20px;
     }
 `;
@@ -138,22 +138,23 @@ const Social = styled.div`
         color: white;
         margin: 0 5px;
         font-size: 1.4em;
+        
         :hover{
             transition: .08s;
-            color:gray;
+            color: gray;
         }
     }
-    @media${device.mobileS}{
+    @media ${device.mobileS}{
         a{
             margin: 0 15px;
         }
     }
-    @media${device.mobileM}{
+    @media ${device.mobileM}{
         a{
             margin: 0 15px;
         }
     }
-    @media${device.mobileL}{
+    @media ${device.mobileL}{
         a{
             margin: 0 15px;
         }

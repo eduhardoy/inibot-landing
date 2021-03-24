@@ -183,7 +183,7 @@ const MenuNav = styled.nav`
                 display: block;
                 height: 25px;
                 width: 100px;
-                font-size: 1.5vw;
+                font-size: .75em;
                 border: 4px solid ${Color__azulOscuro};
                 color: ${Color__azulOscuro};
                 transition: background-color .2s;

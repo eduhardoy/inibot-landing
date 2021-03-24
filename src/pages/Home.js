@@ -31,14 +31,13 @@ const HomeHero = styled.div`
     display: flex;
     justify-content: center;
 
-   
-    
     .Hero__container{
         /* margin-top: 90px; */
         display: flex;
         flex-direction: row;
         max-width: 1920px;
         width:100%;
+       
         
         .Hero__container-title{
             width: 50%;
@@ -61,8 +60,7 @@ const HomeHero = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 2%;
-            /* background: orange; */
+            margin-top: 4%;
 
             div{
                 height: 90%;
@@ -75,7 +73,7 @@ const HomeHero = styled.div`
 
                 img{
                     height: auto; 
-                    width: 90%;
+                    width: 100%;
                 }
             }
         }
@@ -88,7 +86,8 @@ const HomeHero = styled.div`
 
 
             .Hero__container-title{
-                height:20%;
+                margin-top: 40%;                
+                height:100px;
                 width: 100%;
                 h1{
                     margin-top: 0;
@@ -98,6 +97,8 @@ const HomeHero = styled.div`
             }
 
             .Hero__container-img{
+                margin-top:20%;
+                height:200px;
                 width:100%;
                 text-align: center;
                 div{
@@ -121,7 +122,8 @@ const HomeHero = styled.div`
 
 
             .Hero__container-title{
-                height:20%;
+                margin-top: 25%;                
+                height:100px;
                 width: 100%;
                 h1{
                     margin-top: 0;
@@ -131,6 +133,8 @@ const HomeHero = styled.div`
             }
 
             .Hero__container-img{
+                margin-top:15%;
+                height:200px;
                 width:100%;
                 text-align: center;
                 div{
@@ -154,7 +158,8 @@ const HomeHero = styled.div`
 
 
             .Hero__container-title{
-                height:20%;
+                margin-top: 25%;                
+                height:100px;
                 width: 100%;
                 h1{
                     margin-top: 0;
@@ -164,6 +169,8 @@ const HomeHero = styled.div`
             }
 
             .Hero__container-img{
+                margin-top:15%;
+                height:200px;
                 width:100%;
                 text-align: center;
                 div{
@@ -181,22 +188,7 @@ const HomeHero = styled.div`
     }
 
     @media ${device.tablet}{
-            .Hero__container{
-                
-                align-items: center;
-                
-                .Hero__container-title{
-                    width: 100%;
-                    margin-top: 100px;
-                    h1{
-                        margin-bottom:0;
-                    }
-                }
-
-                .Hero__container-img{
-                    width: 40vw;
-                }
-            }
+           
     }
 
     @media ${device.laptop}{
