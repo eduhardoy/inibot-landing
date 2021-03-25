@@ -20,7 +20,6 @@ import fran from '../images/fran.png';
 import neoyoga from '../images/neoyoga.png';
 import tucancha from '../images/tucancha.jpg';
 
-
 const HomeHero = styled.div`
     
     /* height:970px;  */
@@ -122,7 +121,7 @@ const HomeHero = styled.div`
 
 
             .Hero__container-title{
-                margin-top: 25%;                
+                margin-top: 55%;                
                 height:100px;
                 width: 100%;
                 h1{
@@ -133,7 +132,7 @@ const HomeHero = styled.div`
             }
 
             .Hero__container-img{
-                margin-top:15%;
+                margin-top:25%;
                 height:200px;
                 width:100%;
                 text-align: center;
@@ -173,6 +172,7 @@ const HomeHero = styled.div`
                 height:200px;
                 width:100%;
                 text-align: center;
+                
                 div{
                     img{
                         height: auto; 
