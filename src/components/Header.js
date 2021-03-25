@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {Color__azulOscuro, device} from '../styled';
-import logo from '../images/logo4.png';
 
 const HeaderBlock = styled.header`
     position: absolute;
@@ -17,7 +16,6 @@ const HeaderContainer = styled.div`
     max-width:1920px;
     margin-top: 20px;
     height: 75px;
-    /* background-color: red; */
     
     @media ${device.mobileS}{
         flex-direction: column;
@@ -220,7 +218,7 @@ function Header (){
             <HeaderContainer>
                 <HeaderLogo>
                     <div>
-                        <img src={logo} alt="Logo de Inibot"/>
+                        <img src='./images/logo4.png' alt="Logo de Inibot"/>
                     </div>
                 </HeaderLogo>
                 <HeaderMenu>
