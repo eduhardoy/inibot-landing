@@ -38,6 +38,7 @@ const HeroContainerTitle = styled.div`
     justify-content: center;
     align-items: center;
     h1{
+        font-family: "Fredoka One";
         margin-bottom: 10%;
         text-align: center;
         font-size:5vw;
@@ -56,13 +57,13 @@ const HeroContainerTitle = styled.div`
     }
 
     @media ${device.mobileM}{
-        margin-top: 55%;                
+        margin-top: 35%;                
         height:100px;
         width: 100%;
         h1{
             margin-top: 0;
             margin-bottom: 0;
-            font-size: 8vw;
+            font-size: 9vw;
         }
     }
 
@@ -122,7 +123,7 @@ const HeroContainerImg = styled.div`
                 div{
                     img{
                         height: auto; 
-                        width: 80%;
+                        width: 100%;
                         margin-top: 0;
                     
                     }

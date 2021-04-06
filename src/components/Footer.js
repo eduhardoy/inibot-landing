@@ -164,7 +164,7 @@ const Social = styled.div`
 function Footer (){
 
     return(
-        <FooterContainer>
+        <FooterContainer id="contact">
             <ContactSection>
                 <ul>
                     <li>

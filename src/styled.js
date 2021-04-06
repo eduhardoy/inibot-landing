@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle `
         height: 100%;
         margin: 0;
         color: ${Color__azulOscuro};
-        font-family: 'Fredoka One', cursive;
+        font-family: 'Raleway', cursive;
     }
 `
 /* Cargar una tipografía:

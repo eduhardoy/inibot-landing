@@ -76,7 +76,7 @@ const SectionTitleFont = styled.p`
 function HomeSectionAbout(){
 
     return(
-        <AboutSection>
+        <AboutSection id="about">
             <SectionTitleFont>SOBRE NOSOTROS</SectionTitleFont>
             <h2>
                 En INIBOT ofrecemos soluciones a medida de Desarrollo de Software.

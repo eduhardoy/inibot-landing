@@ -7,6 +7,7 @@ const HeaderBlock = styled.header`
     position: absolute;
     width: 100%;
     justify-content: center;
+    margin-top: 10px;
     display:flex;
 `;
 
@@ -14,8 +15,8 @@ const HeaderContainer = styled.div`
     width: 100%;
     display: flex;
     max-width:1920px;
-    margin-top: 20px;
-    height: 75px;
+    height: 70px;
+    align-items: center;
     
     @media ${device.mobileS}{
         flex-direction: column;
@@ -31,6 +32,7 @@ const HeaderContainer = styled.div`
 
 const HeaderLogo = styled.div`
     width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -40,10 +42,11 @@ const HeaderLogo = styled.div`
         margin-left: 100px;
         display: flex;
         justify-content: center;
+        align-items: center;
         
         img{
             width: auto;
-            height: 100%;
+            height: 85%;
         }
     }
 
@@ -135,9 +138,9 @@ const MenuNav = styled.nav`
                 margin: 0 15px;
             a{
                 display: block;
-                height: 35px;
+                height: 30px;
                 width: 130px;
-                border: 6px solid ${Color__azulOscuro};
+                border: 4px solid ${Color__azulOscuro};
                 color: ${Color__azulOscuro};
                 transition: background-color .2s;
                 transition: color .2s;
@@ -225,10 +228,10 @@ function Header (){
                     <MenuNav>
                         <ul>
                             <li>
-                                <a href="#about">NOSOTROS</a>
+                                <a href="#tecno">TECNOLOGIAS</a>
                             </li>
                             <li>
-                                <a href="#tecno">TECNOLOGIAS</a>
+                                <a href="#about">NOSOTROS</a>
                             </li>
                             <li>
                                 <a href="#contact">CONTACTO</a>
